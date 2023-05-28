@@ -128,6 +128,9 @@ function finalizarCompra() {
   if (confirm("¿Deseas confirmar tu pedido?")) {
     const whatsappLink = `https://api.whatsapp.com/send?phone=2613648777&text=${encodeURIComponent(mensaje)}`;
     window.location.href = whatsappLink;
+
+    // Vaciar el carrito después de confirmar el pedido
+    vaciarCarrito();
   }
 }
 
