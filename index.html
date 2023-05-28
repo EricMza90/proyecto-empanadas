@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empanadas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="image/favicon-96x96.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Edu+TAS+Beginner&family=Nunito:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header >
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="image/logo.png" alt="" class="logo-image">
+        </a>
+      </div>
+        <div id="barra" class="col-md-6">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 dropdown-menu dropdown-menu-end" style="padding-left: 5px; padding-right: 5px;">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" style="color: black;" href="index.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" style="color: black;" href="pago.html">CARRITO</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-end">
+          <a href="pago.html" id="btn-cart" class="carrito" title="Ver Carrito">
+            <img src="image/cart.png" alt="Carrito de compras">
+            <span>Ver Carrito</span>
+          </a>
+        </div>
+      </header>
+      <main id="contenedor">
+       <h4 id="vaciar" class="text-center display-6" style="font-size: 26px; text-transform: uppercase; margin-bottom: 40px; font-weight: bold; color: white;">NUESTAS ESPECIALIDADES</h4>
+        <div id="productos" class="row" ></div>
+        </div>
+      </main>
+      <footer class="text-white text-center">
+        <div class="text-center" style="margin-top: 20px;">
+          <h5><strong>MEDIOS DE PAGOS DISPONIBLES</strong></h5>
+        </div>
+        <div class="text-center">
+          <img src="/image/efectivo.png" style="height: 60px;" alt="">
+          <img src="/image/mp.png" style="height: 60px;" alt="">
+        </div>  
+        <div class="text-center">
+          <p><strong>© 2023 Todos los derechos reservados</strong></p>
+          <p><strong>Creado por ErAr</strong></p>
+        </div>
+      </footer>      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="js/funciones.js"></script>
+      <script src="js/main.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

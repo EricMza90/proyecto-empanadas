@@ -1,0 +1,43 @@
+[{
+  "nombre": "Carne",
+  "id": 1,
+  "precio": 2000,
+  "imagen": "../image/carne.png",
+  "varietal": "Precio x Docena"
+},
+{
+  "nombre": "Jamon & Queso",
+  "id": 2,
+  "precio": 2000,
+  "imagen": "../image/jyq.png",
+  "varietal": "Precio x Docena"
+},
+{
+  "nombre": "Pollo",
+  "id": 3,
+  "precio": 2000,
+  "imagen": "../image/pollo.png",
+  "varietal": "Precio x Docena"
+},
+{
+  "nombre": "Caprese",
+  "id": 4,
+  "precio": 2000,
+  "imagen": "../image/caprese.png",
+  "varietal": "Precio x Docena"
+},
+{
+  "nombre": "Humita",
+  "id": 5,
+  "precio": 2000,
+  "imagen": "../image/humita.png",
+  "varietal": "Precio x Docena"
+},
+{
+  "nombre": "Verdura",
+  "id": 6,
+  "precio": 2000,
+  "imagen": "../image/verdura.png",
+  "varietal": "Precio x Docena"
+}
+]

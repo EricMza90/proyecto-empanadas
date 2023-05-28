@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Agregado para ajustar el modelo de caja */
+}
+
+body {
+  background-image: url(../image/anton-kJ6myhO23PI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* Ajusta la imagen al ancho y alto disponibles */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Agregado para asegurar altura mínima de la página */
+  width: 100%;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 150px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center; /* Ajustado para centrar el contenido horizontalmente */
+  align-items: center; /* Ajustado para centrar el contenido verticalmente */
+  width: 100%;
+}
+
+header nav ul li:hover {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9), 0 0 40px rgb(0, 0, 0);
+  outline-color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+#barra {
+  display: flex;
+  justify-content: center;
+}
+
+#extras {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; /* Ajustado para centrar el contenido verticalmente */
+  border-radius: 10px;
+}
+.logo-container {
+  top: 0;
+  left: 50px;
+}
+.logo-image {
+  width: 100px;
+  height: 100px;
+}
+.container-tarjeta {
+  transition: transform 0.3s cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    box-shadow 0.3s, -webkit-transform 0.3s cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-tarjeta:hover {
+  transform: scale(1.05);
+}
+#contenedor {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* Ajusta el valor del ancho según tus necesidades */
+}
+#productos {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* Ajusta el valor del ancho según tus necesidades */
+}
+
+#card-vinos {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 300px;
+  height: 400px;
+}
+
+.img_extras {
+  height: 120px;
+  width: 300px;
+  margin-top: 30px;
+  background-color: rgba(122, 114, 114, 0.5);
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    box-shadow 0.3s, -webkit-transform 0.3s cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+.img_extras:hover {
+  transform: scale(1.05);
+}
+
+#prueba {
+  display: flex;
+  flex-direction: row;
+}
+
+#vaciar {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  margin: 0 50px 30px; /* Ajustado el margen */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: "Nunito", sans-serif;
+  color: blanchedalmond;
+}
+
+.carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 200px;
+  font-family: "Nunito", sans-serif;
+  margin-top: auto;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+@media (min-width: 768px) {
+  header {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 100%;
+  }
+  header nav ul li:hover {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9), 0 0 40px rgb(0, 0, 0);
+    outline-color: rgb(0, 0, 0);
+    border-radius: 20px;
+  }
+  #barra {
+    display: flex;
+    justify-content: center;
+  }
+  #extras {
+    align-self: center;
+    border-radius: 10px;
+  }
+  .container-tarjeta {
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+      0.3s box-shadow,
+      0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    cursor: pointer;
+  }
+
+  .container-tarjeta:hover {
+    transform: scale(1.05);
+  }
+  #card-vinos{
+    background-color:rgba(0, 0, 0, 0.6);
+  }
+
+  .img_extras {
+    height: 120px;
+    width: 300px;
+    margin-top: 30px;
+    background-color: rgba(122, 114, 114, 0.5);
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  }
+  .img_extras:hover {
+    transform: scale(1.05);
+  }
+  #prueba {
+    display: flex;
+    flex-direction: row;
+  }
+  #vaciar {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 380px;
+    font-family: "Nunito", sans-serif;
+    margin-top: auto;
+  }
+  
+}
+@media (min-width: 1200px) {
+  header {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 100%;
+  }
+  header nav ul li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: darkgray;
+    color: #000;
+    border-radius: 5px;
+  }
+  #barra {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-container {
+    top: 0;
+    left: 20px;
+  }
+  
+  .logo-image {
+    width: 100px;
+  }
+  #extras {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    border-radius: 10px;
+  }
+  .container-tarjeta {
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+      0.3s box-shadow,
+      0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    cursor: pointer;
+  }
+
+  .container-tarjeta:hover {
+    transform: scale(1.05);
+  }
+  #card-vinos{
+    background-color:rgba(0, 0, 0, 0.6);
+  }
+
+  .img_extras {
+    height: 120px;
+    width: 300px;
+    margin-top: 30px;
+    background-color: rgba(122, 114, 114, 0.5);
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  }
+  .img_extras:hover {
+    transform: scale(1.05);
+  }
+
+  #prueba {
+    display: flex;
+    flex-direction: row;
+  }
+  #vaciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    height: 80px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: "Nunito", sans-serif;
+  }
+  .whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
+  .carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 240px;
+    font-family: "Nunito", sans-serif;
+    margin-top: auto;
+  }
+.textos{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+  .wrap{
+    width: 100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tarjeta-wrap{
+    margin:10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+    
+  }
+
+  .tarjeta{
+    width: 600px;
+    height: 400px;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .9s ease;
+    border-radius: 9px;
+  }
+
+  .adelante, .atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .adelante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+  .atras{
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+  }
+  .tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+    
+  }
+
+  #info{
+    font-family: "Nunito", sans-serif;
+    width: 300px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+  }
+
+}
