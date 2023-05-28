@@ -7,7 +7,6 @@
 body {
   background-image: url(../image/anton-kJ6myhO23PI-unsplash.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%; /* Ajusta la imagen al ancho y alto disponibles */
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Agregado para asegurar altura mínima de la página */
