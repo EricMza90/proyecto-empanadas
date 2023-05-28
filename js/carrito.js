@@ -118,7 +118,7 @@ function finalizarCompra() {
 
   let mensaje = "¡Hola! Quiero realizar el siguiente pedido:\n\n";
   itemsCarrito.forEach((vino) => {
-    mensaje += `${vino.nombre} ${vino.cantidad} Docenas\n`; // Agregar salto de línea después de cada producto
+    mensaje += `${vino.nombre} ${vino.cantidad} Docena/as\n`; // Agregar salto de línea después de cada producto
   });
 
   const totalPagar = descuento().toFixed(2); // Obtener el total a pagar
